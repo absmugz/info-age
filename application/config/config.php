@@ -233,7 +233,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = '792Cx4zHbMIY02xuA4cHi2gQcqOKGQrQ';
 
 /*
 |--------------------------------------------------------------------------
@@ -366,6 +366,8 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+/* image path config */
+$config['img_path'] = 'assets/uploads/files/';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */

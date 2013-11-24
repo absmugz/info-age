@@ -1,0 +1,166 @@
+
+body {
+    background: url("../img/topBG.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    color: #444549;
+    font-family: Arial,Tahoma,sans-serif;
+    font-size: 12px;
+}
+.navbar-default .navbar-text {
+    color: #FFFFFF !important;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF !important;
+}
+.logo {
+    margin-top: 40px;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.navbar-nav {
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.brand-name {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: capitalize;
+}
+.box {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    padding: 30px 15px;
+}
+
+footer {
+    background: url("../img/bottomPatternLight.png") repeat scroll 0 0 #2E2F33;
+    padding: 30px 0;
+}
+
+div#footerCopyrightContainer {
+    background: url("../img/bottomPatternDark.png") repeat scroll 0 0 #242528;
+    padding: 20px 0;
+}
+footer p {
+    margin: 0;
+    padding: 50px 0;
+}
+
+/* my styles start here*/
+
+.list-group {
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+.list-group-item {
+    background-color: #FFFFFF;
+     border: none;
+    display: block;
+   margin-bottom:none;
+    padding: 5px 5px;
+    position: relative;
+}
+.list-group-item:first-child {
+    border-top-left-radius:0px;
+    border-top-right-radius: 0px; 
+}
+.list-group-item:last-child {
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius: 0px; 
+    margin-bottom: 0;
+}
+.list-group-item > .badge {
+    float: right;
+}
+.list-group-item > .badge + .badge {
+    margin-right: 5px;
+}
+a.list-group-item {
+    color: #555555;
+}
+a.list-group-item .list-group-item-heading {
+    color: #333333;
+}
+a.list-group-item:hover, a.list-group-item:focus {
+    background-color: #F5F5F5;
+    text-decoration: none;
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    background-color: #F26422;
+    border-color: #F26422;
+    color: #FFFFFF;
+    z-index: 2;
+}
+.list-group-item.active .list-group-item-heading, .list-group-item.active:hover .list-group-item-heading, .list-group-item.active:focus .list-group-item-heading {
+    color: inherit;
+}
+.list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
+    color: #E1EDF7;
+}
+.list-group-item-heading {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.list-group-item-text {
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+.panel {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+.panel-body {
+    padding: 15px;
+}
+
+/* my styles end here*/
+@media screen and (min-width: 768px) {
+.brand {
+    background: url("../img/topBGPattern.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    display: inherit;
+    font-size: 5em;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding: 30px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    border-radius: 0 0 0 0;
+}
+.navbar-header {
+    display: none;
+}
+.navbar {
+    min-height: 0;
+}
+.navbar-default {
+    background: none repeat scroll 0 0 #000000;
+    border: medium none;
+}
+.nav > li > a {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.navbar-nav > li > a {
+    line-height: normal;
+}
+.navbar-nav {
+    display: table;
+    float: none;
+    font-size: 12px;
+    margin: 0 auto;
+    table-layout: fixed;
+}
+}
