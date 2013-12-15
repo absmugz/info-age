@@ -19,14 +19,14 @@ class Specials extends CI_Controller {
         $this->load->library('grocery_CRUD');
 
         /* loading side bars */
-        //$data['province'] = $this->province_m->get_provinces();
+        $data['specials_categories'] = $this->specials_categories_m->specials_categories();
         //$this->load->vars($data);
     }
 
     public function index() {
         //echo "<h1>Welcome to the world of Codeigniter</h1>"; //Just an example to ensure that we get into the function
         //die();
-
+        $data['specials_categories'] = $this->specials_categories_m->specials_categories();
         $data['specials'] = $this->specials_m->get_specials();
         //var_dump($data);
         //die();
@@ -35,21 +35,19 @@ class Specials extends CI_Controller {
         $this->load->view('specials/index', $data);
         $this->load->view('admin/components/page_tail');
     }
-    
-         public function get_specials_categories($id)
-      {
-                 
+
+    public function get_specials_categories($id) {
+
         //$data['jobs'] = $this->jobs_m->get_categories($id);
-        $data['specials_categories'] = $this->specials_categories_m->get_specials_categories();
+        $data['specials_categories'] = $this->specials_categories_m->specials_categories();
+        $data['specials'] = $this->specials_m->get_specials_categories($id);
         //var_dump($data);
         //die();
-         
+
         $this->load->view('admin/components/page_head');
         $this->load->view('specials/index', $data);
         $this->load->view('admin/components/page_tail');
- }
-    
-    
+    }
 
     /*
       public function employees()

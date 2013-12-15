@@ -10,6 +10,7 @@
 <div class="col-lg-2"><div role="navigation" id="sidebar" class="sidebar-offcanvas">
           <div class="list-group">
             <a class="list-group-item active" href="#">Category</a>
+             <a class="list-group-item" href="specials">All</a>
             
              <?php    
 if ($specials_categories) {

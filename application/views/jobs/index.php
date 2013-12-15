@@ -10,6 +10,7 @@
         <div class="col-lg-2"><div role="navigation" id="sidebar" class="sidebar-offcanvas">
           <div class="list-group">
             <a class="list-group-item active" href="#">Province</a>
+            <a class="list-group-item" href="jobs">All</a>
             
              <?php    
 if ($provinces) {
@@ -24,6 +25,7 @@ if ($provinces) {
  </div> <!-- ends here -->
  <div class="list-group">
             <a class="list-group-item active" href="#">Category</a>
+            <a class="list-group-item" href="jobs">All</a>
             
              <?php    
 if ($category) {
@@ -38,6 +40,7 @@ if ($category) {
  </div> <!-- ends here -->
  <div class="list-group">
             <a class="list-group-item active" href="#">Country</a>
+            <a class="list-group-item" href="jobs">All</a>
             
              <?php    
 if ($country) {
@@ -52,6 +55,7 @@ if ($country) {
  </div> <!-- ends here -->
    <div class="list-group">
             <a class="list-group-item active" href="#">Experience level</a>
+            <a class="list-group-item" href="jobs">All</a>
             
              <?php    
 if ($experience) {
@@ -66,6 +70,7 @@ if ($experience) {
  </div> <!-- ends here -->
   <div class="list-group">
             <a class="list-group-item active" href="#">Education</a>
+            <a class="list-group-item" href="jobs">All</a>
             
              <?php    
 if ($education) {

@@ -12,6 +12,7 @@ class Matric_resources extends CI_Controller {
         $this->load->database();
         $this->load->helper('url');
         $this->load->model('matric_m');
+         $this->load->model('subjects_m');
         
         /* ------------------ */
 
@@ -23,8 +24,30 @@ class Matric_resources extends CI_Controller {
     }
 
     public function index() {
-        echo "<h1>Welcome to the world of Codeigniter</h1>"; //Just an example to ensure that we get into the function
-        die();
+        //echo "<h1>Welcome to the world of Codeigniter</h1>"; //Just an example to ensure that we get into the function
+        //die();
+        $data['matric_subjects'] = $this->subjects_m->matric_subjects();
+         $data['matric'] = $this->matric_m->get_matric();
+        //var_dump($data);
+        //die();
+
+        $this->load->view('admin/components/page_head');
+        $this->load->view('matric/index', $data);
+        $this->load->view('admin/components/page_tail');
+    }
+    
+  
+        public function get_matric_subjects($id) {
+        //echo "<h1>Welcome to the world of Codeigniter</h1>"; //Just an example to ensure that we get into the function
+        //die();
+        $data['matric_subjects'] = $this->subjects_m->matric_subjects();
+         $data['matric'] = $this->matric_m->get_matric_subjects($id);
+        //var_dump($data);
+        //die();
+
+        $this->load->view('admin/components/page_head');
+        $this->load->view('matric/index', $data);
+        $this->load->view('admin/components/page_tail');
     }
 
     /*
